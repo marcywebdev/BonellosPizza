@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 .navbar {
@@ -34,17 +35,17 @@ body {
 }
 
 .navbar.active .nav-link {
-  color: #555;
+  color: #000000;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-  color: #555;
+  color: #000000;
   text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-  color: #555;
+  color: #000000;
 }
 
 
@@ -56,7 +57,7 @@ body {
 
   .navbar .navbar-brand,
   .navbar .nav-link {
-    color: #555;
+    color: #000000;
   }
 }
 
@@ -77,4 +78,8 @@ body {
 
 .weight-light {
   font-weight: 300;
+}
+
+footer .container {
+  background-color: #0080F6;
 }
