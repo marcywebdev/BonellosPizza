@@ -76,10 +76,15 @@ body {
   font-weight: 500;
 }
 
-.weight-light {
+p.weight-light {
   font-weight: 300;
+  margin: 0px;
 }
 
-footer .container {
-  background-color: #0080F6;
+section.contact {
+  background: #B00000;
+}
+
+footer {
+  background: #0080F6;
 }
