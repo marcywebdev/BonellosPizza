@@ -81,6 +81,11 @@ p.weight-light {
   margin: 0px;
 }
 
+section.reviews {
+  background: #0080F6;
+  height: 55vh;
+}
+
 section.contact {
   background: #B00000;
 }
