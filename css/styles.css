@@ -67,7 +67,7 @@ i.fas {
 }
 
 .header {
-  background-image: linear-gradient(180deg, #000000 0%, rgba(124, 124, 124, 0) 26.56%), url('/images/sliced-pepperoni-pizza.jpg');
+  background-image: linear-gradient(180deg, #000000 0%, rgba(124, 124, 124, 0) 26.56%), url('../images/sliced-pepperoni-pizza.jpg');
   background-size: cover;
   background-position: center center;
   height: 100vh;
