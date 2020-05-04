@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <nav class="navbar navbar-expand-lg fixed-top py-2">
       <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img
             src="images/Logowhite.png" alt="logo" srcset=""></a>
@@ -23,31 +23,115 @@
 
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span
+            <li class="nav-item active"><a href="#home" class="nav-link text-uppercase font-weight-bold">Home <span
                   class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Menu</a></li>
+            <li class="nav-item"><a href="#menu" class="nav-link text-uppercase font-weight-bold">Menu</a></li>
+            <li class="nav-item"><a href="#reviews" class="nav-link text-uppercase font-weight-bold">Reviews</a></li>
             <li class="nav-item"><a href="#about" class="nav-link text-uppercase font-weight-bold">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold"></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <section class="menu pt-5">
+  <section class="menu pt-5 pb-5" id="menu">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <img src="images/pizzaandacoke.jpg" class="img-fluid" alt="Pizza and a Coke">
+        <div class="col-md-9 align-self-center wow fadeInLeft">
+          <img src="images/Freshpizza.png" class="img-fluid" alt="Pizza and a Coke">
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm text-center">
+        <div class="col-md-3 text-center align-self-center wow fadeInUp">
+          <h2 class="display-6">Ready to Order?</h2>
+          <br>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pizzaorder">Click Here to
+            Start Order
+          </button>
+
+          <div class="modal fade right" id="pizzaorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="heading lead">Order
+                  </p>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <i class="fas fa-pizza-slice fa-4x mb-3 animated rotateIn"></i>
+                    <p>
+                      <strong>Your pizza your way</strong>
+                    </p>
+                    <p>Choose the size and topping's! <br>
+                      <strong>Freshly made.</strong>
+                    </p>
+                  </div>
+
+                  <hr>
+
+                  <p class="text-center">
+                    <strong>Choose topping's below and size</strong>
+                  </p>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-179" value="option1"
+                      checked>
+                    <label class="form-check-label" for="radio-179">Cheese</label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-279" value="option2">
+                    <label class="form-check-label" for="radio-279">Pepperoni</label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-379" value="option3">
+                    <label class="form-check-label" for="radio-379">Sausage</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-479" value="option4">
+                    <label class="form-check-label" for="radio-479">Anchovies</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-579" value="option5">
+                    <label class="form-check-label" for="radio-579">Mushrooms</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-579" value="option6">
+                    <label class="form-check-label" for="radio-579">Small</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-579" value="option7">
+                    <label class="form-check-label" for="radio-579">Medium</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" name="group1" type="checkbox" id="radio-579" value="option8">
+                    <label class="form-check-label" for="radio-579">Large</label>
+                  </div>
+                  <p class="text-center">
+                    <strong>Special Requests?</strong>
+                  </p>
+                  <div class="md-form">
+                    <textarea type="text" id="form79textarea" class="md-textarea form-control" rows="3"></textarea>
+                    <label for="form79textarea">Your message</label>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <a type="button" class="btn btn-primary waves-effect waves-light">Send
+                    <i class="fa fa-paper-plane ml-1"></i>
+                  </a>
+                  <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container h-100">
       <div class="row h-100 justify-content-center">
         <h2 class="display-5 weight-normal align-self-center text-white pt-4">Our Customer's Yelp Reviews</h2>
@@ -101,7 +185,7 @@
       </div>
     </div>
   </section>
-  <section class="about bg-white pt-5 pb-5" href="#about">
+  <section class="about bg-white pt-5 pb-5" id="about">
     <div class="container wow fadeInUp">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -119,7 +203,7 @@
       </div>
     </div>
   </section>
-  <section class="contact text-white">
+  <section id="contact" class="contact text-white">
     <div class="container pt-4 pb-4">
       <div class="row">
         <div class="col-md-6 wow fadeInLeft">
