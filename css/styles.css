@@ -102,14 +102,13 @@ footer {
   display: block;
 }
 
-@media (min-width: 375px) {
+hr {
+  background-color: #fff;
+}
+
+@media (max-width: 575px) {
   .menu h2 {
     padding-top: 15px;
-  }
-
-  .menu img {
-    display: inline-flex;
-    align-self: center;
   }
 
   section.about h2 {
@@ -124,5 +123,9 @@ footer {
     display: flex;
     align-self: center;
     font-size: 25px;
+  }
+
+  .about p {
+    font-size: 18px;
   }
 }
