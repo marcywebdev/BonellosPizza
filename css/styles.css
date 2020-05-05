@@ -8,6 +8,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -28,8 +29,6 @@ body {
   color: #fff;
 }
 
-
-/* Change navbar styling on scroll */
 .navbar.active {
   background: #B00000;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +56,6 @@ i.fas.fa-pizza-slice {
   color: #B00000;
 }
 
-/* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
     background: #B00000;
@@ -102,4 +100,29 @@ footer {
 .yelp-review {
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: 375px) {
+  .menu h2 {
+    padding-top: 15px;
+  }
+
+  .menu img {
+    display: inline-flex;
+    align-self: center;
+  }
+
+  section.about h2 {
+    padding-top: 15px;
+  }
+
+  p.hours {
+    padding-bottom: 30px;
+  }
+
+  h2.review {
+    display: flex;
+    align-self: center;
+    font-size: 25px;
+  }
 }
